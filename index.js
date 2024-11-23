@@ -1,13 +1,12 @@
 const express = require("express");
+const morgan = require("morgan");
 const app = express();
 const port = 3000;
 
-//định nghĩa như url mình học trong java kkk
-app.get("/con=cac", (req, res) => {
-  var a = 1;
-  var b = 2;
-  var c = a + b;
-  res.send("Hello World!");
+//định nghĩa như ul mình học trong java kkk
+app.use(morgan("combined"));
+app.get("/trang-chu", (req, res) => {
+  res.send(`<h1 style="color: blue;">Hello World!</h1>`);
 });
 
 //127.0.0.1 -1113
