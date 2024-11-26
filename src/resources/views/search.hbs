@@ -1,0 +1,22 @@
+<div class="mt-4">
+  <form method="post" action="/search">
+    <!-- Thêm action và method -->
+    <div class="form-group">
+      <label for="search-input">Tên của bạn:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="search-input"
+        placeholder="Vui lòng nhập tên của bạn."
+        name="name"
+      />
+      <label>check for my favorite</label>
+      <select name="check" id="">
+        <option value="">--lua chon cua ban----</option>
+        <option value="male">Nam</option>
+        <option value="female">Nữ</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+  </form>
+</div>
