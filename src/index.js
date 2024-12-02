@@ -5,7 +5,8 @@ const { engine } = require("express-handlebars");
 const app = express();
 const port = 3000;
 //khởi tạo routes
-const route = require("./routes");
+const route = require("./routes/index");
+//
 app.use(express.static(path.join(__dirname, "public")));
 app.use(
   express.urlencoded({

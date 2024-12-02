@@ -1,38 +1,35 @@
-@use "variables";
+@use 'variables';
 
 h1 {
-  color: variables.$red-color;
+    color: variables.$red-color;
 }
 
 h2 {
-  color: green;
+    color: green;
 }
 h3 {
-  color: yellowgreen;
-}
-h4 {
-  color: blue;
-}
-h5 {
-  background-color: white;
+    color: yellowgreen;
 }
 .test {
-  display: flex;
+    display: flex;
 }
 @keyframes test {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 body {
-  background-color: white;
+    background-color: white;
 }
 h5 {
-  background-color: blue;
+    background-color: blue;
+}
+h6 {
+    background-color: black;
 }
